@@ -29,6 +29,7 @@ public class CoffeeShop {
 
             System.out.print("\nDo you want to order more [y/Y]? ");
             String order_more = scanner.next();
+            
             if (!order_more.equalsIgnoreCase("y")) {
                 System.out.println();
                 break;
@@ -48,12 +49,13 @@ public class CoffeeShop {
 
         System.out.print("Press 'y' or 'Y' for adding a shot: ");
         String is_addShot = scanner.next();
+        
         if (is_addShot.equalsIgnoreCase("Y")){
             System.out.print("How many shots for adding in Espresso: ");
             int add_shot = scanner.nextByte();
             espresso.addShot(add_shot);
-
         }
+        
         System.out.println("Your order: Espresso (Size: " + size.toUpperCase() + ")");
         System.out.println("Total Price = " + espresso.calculateFinalePrice() + " Baht");
 
@@ -65,6 +67,7 @@ public class CoffeeShop {
         String size = scanner.next();
         System.out.print("Do you would like to add whipped cream [y/Y]? ");
         String whipped = scanner.next();
+        
         boolean add_whipped = whipped.equalsIgnoreCase("y") ? true : false;
 
         Frappuccino frappuccino = new Frappuccino(size, add_whipped);
