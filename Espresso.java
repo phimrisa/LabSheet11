@@ -26,4 +26,3 @@ public class Espresso extends Drink {
                 "\nTotal price = " + calculateFinalePrice() + " Baht";
     }
 }
-
