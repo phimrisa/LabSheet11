@@ -40,4 +40,3 @@ public abstract class Drink implements Priceable{
         return "Your order: " + drinkName + " (Size: " + size + ")";
     }
 }
-
