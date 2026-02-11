@@ -7,7 +7,7 @@ public class Espresso extends Drink {
     private int shot;
 
     public Espresso(String size) {
-        super("Espresso",  35, size);
+        super("Espresso", 35, size);
         this.shot = 0;
     }
 
@@ -21,12 +21,9 @@ public class Espresso extends Drink {
     }
 
     public String toString() {
-        if(shot != 0) {
-            return super.toString() +
-                    (shot != 0 ? "\nAdded " + shot + " shot" : "") +
-                    "\nTotal price = " + calculateFinalePrice() + " Baht";
-        }
         return super.toString() +
+                (shot != 0 ? "\nAdded " + shot + " shot" : "") +
                 "\nTotal price = " + calculateFinalePrice() + " Baht";
     }
 }
+
