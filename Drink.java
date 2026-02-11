@@ -25,18 +25,19 @@ public abstract class Drink implements Priceable{
     @Override
     public double getSizeExtra() {
         if(size.equalsIgnoreCase("s")) {
-            return 0;
+            return 0.0;
         }
         else if(size.equalsIgnoreCase("m")) {
-            return 10;
+            return 10.0;
         }
         else if(size.equalsIgnoreCase("l")){
-            return 15;
+            return 15.0;
         }
-        return -1;
+        return -1.0;
     }
 
     public String toString() {
         return "Your order: " + drinkName + " (Size: " + size + ")";
     }
 }
+
