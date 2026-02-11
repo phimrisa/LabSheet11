@@ -12,8 +12,7 @@ public class Espresso extends Drink {
     }
 
     public void addShot(int shot) {
-        System.out.print("How many shots for adding in Espresso: ");
-        shot = scanner.nextInt();
+        this.shot = shot;
     }
 
     @Override
@@ -24,7 +23,7 @@ public class Espresso extends Drink {
     public String toString() {
         if(shot != 0) {
             return super.toString() +
-                    "\nAdded " + shot + " shot" +
+                    (shot != 0 ? "\nAdded " + shot + " shot" : "") +
                     "\nTotal price = " + calculateFinalePrice() + " Baht";
         }
         return super.toString() +
